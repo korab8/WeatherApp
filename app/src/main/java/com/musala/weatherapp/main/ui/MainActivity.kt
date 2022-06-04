@@ -66,7 +66,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.errorLayout.retryBtn.setOnClickListener {
-            mainViewModel.getWeather(sharedPreferencesManager.getLocation())
+            if(isPermissionGranted() && sharedPreferencesManager.getLocation().isNotInitialized()) {
+                mainViewModel.getWeather(sharedPreferencesManager.getLocation())
+            } else {
+                requestLocationPermissions()
+            }
         }
 
         subscribeUI()
@@ -104,7 +108,7 @@ class MainActivity : AppCompatActivity() {
             if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 getCurrentLocation()
             } else {
-                showErrorView("Please allow location permission!")
+                showErrorView(getString(R.string.please_allow_location_permission))
             }
 
         }
@@ -152,7 +156,7 @@ class MainActivity : AppCompatActivity() {
                     updateUIWithModel(it.data)
                 }
                 Status.ERROR -> {
-                    showErrorView(it.message ?: "Something went wrong!")
+                    showErrorView(it.message ?: getString(R.string.something_went_wrong))
                 }
                 else -> {}
             }
@@ -175,13 +179,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateUIWithModel(weatherModel: WeatherModel?) {
         if (weatherModel == null) {
-            showErrorView("Failed to load data. Retry!")
+            showErrorView(getString(R.string.failed_please_retry))
         } else {
             contentMainBinding.root.show()
             errorLayoutBinding.root.hide()
             with(contentMainBinding) {
                 city.text = weatherModel.name
-                weatherConditions.text = weatherModel.weather.firstOrNull()?.main ?: "Unknown"
+                weatherConditions.text = weatherModel.weather.firstOrNull()?.main ?: getString(R.string.unknown)
                 when (weatherModel.weather.firstOrNull()?.id ?: 800) {
                     clearWeatherCode -> weatherIcon.setImageDrawable(getDrawable(R.drawable.ic_sunny))
                     in rainyWeatherRange -> weatherIcon.setImageDrawable(getDrawable(R.drawable.ic_rainy))
@@ -199,7 +203,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun Int.visibilityString(): String =
         if (this == 10000) {
-            "MAX"
+            getString(R.string.max)
         } else {
             "$this m"
         }
