@@ -10,5 +10,8 @@ Icons and screens are provided by: https://www.figma.com/community/file/10994947
 
 
 DEMO:
-https://user-images.githubusercontent.com/33674287/172026075-5d089399-6c05-4ce9-b624-986f010a05a4.mp4
+
+
+https://user-images.githubusercontent.com/33674287/172026150-82b8ba83-4265-4dfd-b966-a1092ca9f4c3.mp4
+
 
