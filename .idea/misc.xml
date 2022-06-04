@@ -3,7 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_cloudy.xml" value="0.1935" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_humidity.xml" value="0.2555" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_rainy.xml" value="0.1935" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_retry.xml" value="0.1935" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_snow.xml" value="0.1935" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_sunny.xml" value="0.1935" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_umbrella.xml" value="0.2555" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_unknown.xml" value="0.1935" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_visibility.xml" value="0.1935" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/drawable/ic_wind.xml" value="0.2555" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/layout/content_main.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/layout/error_layout.xml" value="0.3614583333333333" />
         <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/menu/home_menu.xml" value="0.3614583333333333" />
         <entry key="..\:/Users/Korab/Documents/Personal/Applications/WeatherApp/app/src/main/res/xml/openweather_api_key.xml" value="0.3625" />
       </map>

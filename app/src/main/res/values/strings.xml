@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">WeatherApp</string>
     <string name="search">Search</string>
-    <string name="search_hint">Type city here...</string>
+    <string name="search_hint">Type city here…</string>
+    <string name="check_your_connection">Server could not be reached. Please check your connection.</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="retry_button">Retry</string>
+    <string name="prishtina">Prishtina</string>
+    <string name="weather">Weather</string>
+    <string name="visibility">Visibility</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
 </resources>
