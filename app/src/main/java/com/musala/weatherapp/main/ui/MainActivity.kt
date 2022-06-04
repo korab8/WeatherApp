@@ -214,6 +214,7 @@ class MainActivity : AppCompatActivity() {
                 contentMainBinding.root.hide()
                 sharedPreferencesManager.saveLocation(Location(city = query ?: ""))
                 mainViewModel.getWeather(Location(city = query ?: ""))
+                menuItem.collapseActionView()
                 return false
             }
 
