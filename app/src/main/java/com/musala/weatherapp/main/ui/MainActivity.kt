@@ -80,14 +80,18 @@ class MainActivity : AppCompatActivity() {
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         if (isPermissionGranted()) {
             mFusedLocationClient!!.lastLocation.addOnSuccessListener { location ->
-                sharedPreferencesManager.saveLocation(
-                    Location(
-                        location.latitude.toFloat(),
-                        location.longitude.toFloat(),
-                        ""
+                if(location != null) {
+                    sharedPreferencesManager.saveLocation(
+                        Location(
+                            location.latitude.toFloat(),
+                            location.longitude.toFloat(),
+                            ""
+                        )
                     )
-                )
-                mainViewModel.getWeather(sharedPreferencesManager.getLocation())
+                    mainViewModel.getWeather(sharedPreferencesManager.getLocation())
+                } else {
+                    showErrorView(getString(R.string.enable_location_to_continue))
+                }
             }.addOnFailureListener {
                 binding.progressBar.hide()
                 showErrorView(getString(R.string.services_not_available))

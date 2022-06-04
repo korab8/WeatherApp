@@ -15,4 +15,5 @@
     <string name="max">MAX</string>
     <string name="please_allow_location_permission">Please allow location permission!</string>
     <string name="services_not_available">Google Services are not available! App doesn\'t work as expected.</string>
+    <string name="enable_location_to_continue">Please enable location to continue!</string>
 </resources>
