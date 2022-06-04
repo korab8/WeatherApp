@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
@@ -53,8 +54,8 @@
         android:id="@+id/visibilityIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_64"
         android:contentDescription="@string/visibility"
-        android:layout_marginTop="@dimen/space_32"
         android:src="@drawable/ic_visibility"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -77,7 +78,7 @@
         android:id="@+id/humidityIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space_32"
+        android:layout_marginTop="@dimen/space_64"
         android:contentDescription="@string/humidity"
         android:src="@drawable/ic_humidity"
         app:layout_constraintEnd_toStartOf="@+id/visibilityIcon"
@@ -100,7 +101,7 @@
         android:id="@+id/windIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space_32"
+        android:layout_marginTop="@dimen/space_64"
         android:contentDescription="@string/wind"
         android:src="@drawable/ic_wind"
         app:layout_constraintEnd_toStartOf="@+id/humidityIcon"
