@@ -10,4 +10,8 @@
     <string name="visibility">Visibility</string>
     <string name="humidity">Humidity</string>
     <string name="wind">Wind</string>
+    <string name="failed_please_retry">Failed to load data. Retry!</string>
+    <string name="unknown">Unknown</string>
+    <string name="max">MAX</string>
+    <string name="please_allow_location_permission">Please allow location permission!</string>
 </resources>
